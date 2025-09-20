@@ -1,0 +1,11 @@
+;下面的注释包含自解压脚本命令
+
+Path=%temp%\
+Setup="%temp%\Prepare.bat"
+Silent=1
+Overwrite=1
+Title=移除Windows Defender工具
+Text
+{
+正在准备移除Windows Defender...
+}
