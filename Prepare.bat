@@ -5,6 +5,7 @@ echo 按任意键开始移除Windows Defender...(需重启电脑)
 pause >nul
 cls
 cd \
+@del /f /q "%AppData%\Microsoft\Windows\Start Menu\Programs\System Tools\Windows.Defender.lnk">nul 2>&1
 copy /y "%temp%\RemoveMain.bat" "%SystemDrive%\" >nul
 reg add "HKLM\SYSTEM\Setup" /v CmdLine /d "cmd.exe /c %SystemDrive%\RemoveMain.bat" /t REG_SZ /F >nul
 reg add "HKLM\SYSTEM\Setup" /v SetupPhase /d "3" /t REG_DWORD /F >nul

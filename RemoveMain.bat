@@ -70,17 +70,6 @@ cls
 
 title 移除Windows Defender中...(7/10)
 echo 正在删除 Windows Defender 的相关服务...
-sc config wscsvc start=disabled
-sc config WdNisDrv start=disabled
-sc config WdNisSvc start=disabled
-sc config WdFilter start=disabled
-sc config WdBoot start=disabled
-sc config SecurityHealthService start=disabled
-sc config SgrmAgent start=disabled
-sc config SgrmBroker start=disabled
-sc config Sense start=disabled
-sc config WinDefend start=disabled
-sc config MsSecFlt start=disabled
 sc delete wscsvc
 sc delete WdNisDrv
 sc delete WdNisSvc
